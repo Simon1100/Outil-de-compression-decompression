@@ -30,7 +30,7 @@ typedef struct celluleArbre *ListeArbre;
 
 //On définit un type permettant de contenir pour chaque caractère du fichier qui sera lu,
 //sa représentation par sa taille en bits (nombre de bits), et sa valeur. Utile à la compressions et décompression
-//Par exemple pour a : il pourra être représenté par 010 et sa taille sera de 3
+//Par exemple pour 'a' : il pourra être représenté par 010 et sa taille sera de 3
 typedef struct {
     unsigned char carac;
     unsigned char val;
