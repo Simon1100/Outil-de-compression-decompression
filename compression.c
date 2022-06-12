@@ -635,9 +635,9 @@ int main(int argc, char *argv[]){
     FILE *Livre = NULL;
     // Tableau correspondant aux occurrences de chaque caractère indicé par le caractère dit
     int Nbcaractere[256] = {0};
-    // Nombre de caractètes totals dans le fichier
+    // Nombre de caractères total dans le fichier
     int Nbcarac = 0;
-    //Variable correspondant aux nombre de caractere utilisé (different) dans le fichier
+    // Variable correspondant aux nombres de caractère utilisé (diffèrent) dans le fichier
     int NbcaracUtilise=0;
     // Tableau de ProbabiliteCarac contenant par indice : le caractère dit en char et sa probabilité en double
     ProbabiliteCarac tabproba[256];
@@ -679,7 +679,7 @@ int main(int argc, char *argv[]){
     }
     if(strcmp(argv[1],"-c")==0){
 
-        //Pour chaque caractère nous cherchons son nombre d'occurence dans le livre, ainsi que le nombre de caractère au total dans le livre
+        //Pour chaque caractère, nous cherchons son nombre d'occurrences dans le livre, ainsi que le nombre de caractère au total dans le livre
         char a;
         while ((a = fgetc(Livre)) != EOF)
         {
@@ -687,7 +687,7 @@ int main(int argc, char *argv[]){
             Nbcarac++;
         }
 
-        //On place dans le tableau tabproba, la probabilité d'apparition de chaque caractère dit, et ce caractère dans un char.
+        //On place dans le tableau tabproba, la probabilité d'apparition de chaque caractère dit, et ce caractère dans un char
         for (int i = 0; i < 256; i++)
         {
             tabproba[i].carac= (char) i;
@@ -695,7 +695,7 @@ int main(int argc, char *argv[]){
         }
 
         //On rassemble ici tous les caractères utilisés c'est à dire :
-        //Si les indices 1 2 3 4 du tabeau tabproba on zero occurence mais que à l'indice 0 et 5 ils en ont
+        //Si les indices 1 2 3 4 du tableau tabproba ont zéro occurence mais qu'à l'indice 0 et 5 ils en ont
         //alors on passe l'indice 5 en 1
         //On rassemble donc les caractères utilisés côte à côte dans le tableau tabproba.
         //(C'est la raison pour laquelle nous avons placé le caractère dans une structure et sa probabilité,
@@ -718,7 +718,7 @@ int main(int argc, char *argv[]){
 
     //On initialise un tableau de code : permettant de contenir pour chaque caractere
     //du fichier qui sera lu, sa représentation par sa taille en bits (nombre de bits), et sa valeur.
-    // Utile à la compressions et décompression
+    // Utile à la compression et décompression
 
 
     code c[256];
