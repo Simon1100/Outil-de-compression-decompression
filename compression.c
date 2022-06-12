@@ -90,7 +90,7 @@ ListeArbre transformationTableauProbabiliteCaracEnListeArbre(ListeArbre lstArbre
     return save;
 }
 
-//Fonction peremettant d'insérer en tête de liste un Arbre 
+//Fonction permettant d'insérer en tête de liste un Arbre 
 ListeArbre insererentete(Arbre a, ListeArbre lst) {
     ListeArbre L = (ListeArbre) calloc(1, sizeof(struct celluleArbre));
     L->a = a;
@@ -98,7 +98,7 @@ ListeArbre insererentete(Arbre a, ListeArbre lst) {
     return L;
 }
 
-//Fonction peremettant d'insérer au milieu d'une liste un Arbre 
+//Fonction permettant d'insérer au milieu d'une liste un Arbre 
 ListeArbre insereraumilieu(Arbre a, ListeArbre lst1, ListeArbre lst2) {
     ListeArbre L = (ListeArbre) calloc(1, sizeof(struct celluleArbre));
     L->a = a;
@@ -107,7 +107,7 @@ ListeArbre insereraumilieu(Arbre a, ListeArbre lst1, ListeArbre lst2) {
     return lst1;
 }
 
-// //Fonction peremettant d'insérer en tête d'une liste un Arbre 
+// //Fonction permettant d'insérer en tête d'une liste un Arbre 
 // ListeArbre insererenqueue(Arbre a, ListeArbre lst) {
 //     ListeArbre L = lst;
 //     while(lst->suivant!=NULL){
